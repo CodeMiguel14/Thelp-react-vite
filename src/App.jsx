@@ -17,10 +17,15 @@ function App() {
         </a>
       </div>
       <h1>Vite + React + THELP</h1>
+      <h1>count is {count}</h1>
       <div className="card">
+          
+
         <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+          incrementar
         </button>
+        <button onClick={() => setCount((count) => count - 1)}>Decrementar </button>
+        <button onClick={() => setCount((count) => count = 0)}>Reiniciar </button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
